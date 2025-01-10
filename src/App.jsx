@@ -14,7 +14,7 @@ import Connexion from "./components/Home/Connexion";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Tp_blog">
         <Routes>
           <Route path="" element={<Home />} />
           <Route path="connexion" element={<Connexion />} />
