@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from 'react'
-
 const themeContext = createContext()
 
 function ThemeProvider (children) {
@@ -9,7 +8,6 @@ function ThemeProvider (children) {
     const savedTheme = localStorage.getItem('theme')
     return savedTheme
   }
-
   /*
     const toogleTheme= useCallback(()=>{
                 if(theme === "light"){
